@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Handlee", cursive;
+  font-size: 1.3rem;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  background-color: #e9c46a;
+  /* font-size: 1.4rem; */
+  letter-spacing: 2px;
+}
+main {
+  width: 70%;
+  min-height: 100%;
+  /* background-color: rgba(22, 8, 8, 0.808); */
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+header {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* border-bottom: 2px paleturquoise solid; */
+  padding-bottom: 20px;
+}
+
+header img {
+  padding: 20px 0 0 20px;
+  width: 250px;
+  height: 150px;
+  object-fit: contain;
+}
+
+header form {
+  width: 70%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header form input {
+  width: 70%;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  color: #2f4f4f;
+  padding: 10px;
+border-radius:  15px 0 0 15px ;  box-shadow: 10px 10px 5px 0px rgba(38, 70, 83, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(38, 70, 83, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(38, 70, 83, 0.75);
+}
+
+
+
+header form button {
+  padding: 10px;
+  width: 50px;
+  border: none;
+  outline: none;
+  color: #e9c46a;
+  background-color: #264653;
+  font-weight: bold;
+  /* padding-top: 0.25rem; */
+
+  /* margin-left: 20px; */
+
+  border-radius: 0 15px 15px 0;
+  box-shadow: 10px 10px 5px 0px rgba(38, 70, 83, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(38, 70, 83, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(38, 70, 83, 0.75);
+}
+
+section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: #264653;
+  border-radius:  50px;
+  margin-top: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(38, 70, 83, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(38, 70, 83, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(38, 70, 83, 0.75);
+}
+.to-do-title , .done-title  {
+width: 50%;
+text-align: center;
+margin:0 auto;
+ box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+  border-radius:5px;
+  line-height:2em;
+}
+aside {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+}
+
+aside h3 {
+  padding-left: 10px;
+  text-decoration: underline;
+  color: #264653;
+  background-color: #e9c46a;
+  font-weight: bold;
+}
+
+aside h2 {
+  /* padding: 50px 0 0 10px; */
+  color: #e9c46a;
+  width: 70%;
+  margin: 5rem auto;
+  font-size: 1.5rem;
+  text-align: center;
+  /* border: 4px dotted #E9C46A; */
+  border-radius: 10%;
+  /* text-shadow: 2px 2px 1px rgba(233,196,106,0.6); */
+}
+
+.task-container {
+  width: 100%;
+  display: flex;
+}
+
+.task {
+  width: 80%;
+  display: flex;
+  padding: 8px 0 0 5px;
+  margin: 0 auto;
+}
+
+.task p {
+  flex-wrap: wrap;
+  background-color: #e9c46a;
+  padding: 0.5rem;
+  border-radius: 5px;
+  /* font-size: 1.3rem; */
+  font-weight: bold;
+  color: #264653;
+  /* width:100%; */
+  box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+}
+
+.bin, .tick {
+  width: 40px;
+  padding: 10px 5px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.bin:hover , .tick:hover {
+  color: #f16051;
+transform: scale(1.5);
+  transition: all ease 500ms;  
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 5%;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  /* border-top: 2px whitesmoke solid; */
+  padding-top: 20px;
+
+  /* background-color: #F4A261 */
+}
+
+.footerText {
+  font-size: 20px;
+  font-weight: bold;
+  color: #264653;
+  margin: 0 20px;
+  letter-spacing: 1px;
+}
