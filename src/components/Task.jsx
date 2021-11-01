@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaTrashAlt } from "react-icons/fa";
-
 import { BsCheckCircleFill } from "react-icons/bs";
-const Task = ({ task, tasks, handleDelete, handleTick }) => {
+import MyContext from "../context/MyContext";
+const Task = () => {
+  const context = useContext(MyContext);
+  const { task, tasks, handleDelete, handleTick } = context;
   return (
     <div className="task-container">
       <div className="tick">

@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import TaskContainer from "./TaskContainer";
 import DoneContainer from "./DoneContainer";
-const Section = ({ tasks, handleDelete, handleTick, tasksDone }) => {
+import MyContext from "../context/MyContext"
+const Section = () => {
+  const context = useContext(MyContext)
+  const { tasks, handleDelete, handleTick, tasksDone } = context
   return (
     <section>
       <TaskContainer

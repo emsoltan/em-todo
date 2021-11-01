@@ -1,14 +1,17 @@
-import React from "react";
+import React, {useContext} from "react";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 import { FaTrashAlt } from "react-icons/fa";
+import MyContext from "../context/MyContext"
 
-const Done = ({ task, tasksDone, handleDelete, handleTick }) => {
+const Done = () => {
+    const context = useContext(MyContext);
+const { task, tasksDone, handleDelete, handleTick }= context
   return (
     <div className="task-container">
       <div className="tick">
         <BsArrowUpCircleFill
           style={{
-            fontSize: "30px",
+            fontSize: "25px",
           }}
           onClick={() => handleTick(task.id, tasksDone)} //Handle the tick functionality
         />
@@ -29,7 +32,7 @@ const Done = ({ task, tasksDone, handleDelete, handleTick }) => {
       </div>
       <div className="bin">
         <FaTrashAlt
-          style={{ fontSize: "30px" }}
+          style={{ fontSize: "25px" }}
           onClick={() => handleDelete(task.id, tasksDone)}
         />
       </div>

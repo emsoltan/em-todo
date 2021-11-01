@@ -1,7 +1,10 @@
-import React from "react";
+import React,{useContext} from "react";
 import Task from "./Task";
+import MyContext from "../context/MyContext"
 
-const TaskContainer = ({tasks, handleDelete, handleTick}) => {
+const TaskContainer = () => {
+  const context = useContext(MyContext)
+  const {tasks, handleDelete, handleTick} = context
     return (
       <aside>
         <h3 className="to-do-title">To-Do: </h3>

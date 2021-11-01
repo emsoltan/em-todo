@@ -177,7 +177,7 @@ aside h2 {
 
 .bin:hover , .tick:hover {
   color: #f16051;
-transform: scale(1.5);
+transform: scale(1.2);
   transition: all ease 500ms;  
 }
 

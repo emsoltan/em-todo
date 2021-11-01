@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import todo from "../assets/todo.png";
 import Form from "./Form";
+import MyContext from "../context/MyContext"
 
-const Header = ({handleSubmit,task,setTask, inputRef}) => {
+const Header = () => {
+  const context = useContext(MyContext);
+  const {handleSubmit,task,setTask, inputRef} = context;
   return (
     <header>
       <img src={todo} alt="logo" />

@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useContext} from "react";
 import { v4 as uuidv4 } from "uuid";
-const Form = ({ task, setTask, handleSubmit, inputRef }) => {
+import MyContext from "../context/MyContext"
+const Form = () => {
+  const context = useContext(MyContext)
+  const { task, setTask, handleSubmit, inputRef }= context
   return (
     <form>
    
