@@ -3,20 +3,12 @@ import Done from "./Done";
 import MyContext from "../context/MyContext";
 const DoneContainer = () => {
   const context = useContext(MyContext);
-  const { tasksDone, handleDelete, handleTick } = context;
+  const { tasksDone } = context;
   return (
     <aside>
-      <h3 class="done-title">Completed Tasks</h3>
+      <h3 className="done-title">Completed Tasks</h3>
       {tasksDone.length > 0 ? (
-        tasksDone.map((task) => (
-          <Done
-            key={task.id}
-            task={task}
-            tasksDone={tasksDone}
-            handleDelete={handleDelete}
-            handleTick={handleTick}
-          />
-        ))
+        tasksDone.map((task) => <Done key={task.id} task={task} />)
       ) : (
         <h2>No Completed Tasks</h2>
       )}

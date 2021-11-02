@@ -13,7 +13,6 @@ const MyProvider = (props) => {
     inputRef.current.focus();
   }, []);
 
-  // const [x,y]= useLocalStorage(key,date)
 
   useEffect(() => {
     let storage = localStorage.getItem("tasks");
@@ -41,7 +40,6 @@ const MyProvider = (props) => {
   };
 
   const handleDelete = (id, array) => {
-    // setTasks(tasks.filter((item) => item.id !== id));
     const tempArray = array.filter((item) => item.id !== id);
     array === tasks ? setTasks(tempArray) : setTasksDone(tempArray);
   };

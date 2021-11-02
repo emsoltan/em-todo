@@ -10,7 +10,7 @@ const Form = () => {
       <input
         type="text"
         value={task.task}
-        maxLength="60"
+        maxLength="40"
         ref={inputRef}
         onChange={(e) =>
           setTask({ id: uuidv4(), task: e.target.value, done: false })

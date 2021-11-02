@@ -1,11 +1,11 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 import { FaTrashAlt } from "react-icons/fa";
-import MyContext from "../context/MyContext"
+import MyContext from "../context/MyContext";
 
-const Done = () => {
-    const context = useContext(MyContext);
-const { task, tasksDone, handleDelete, handleTick }= context
+const Done = ({ task }) => {
+  const context = useContext(MyContext);
+  const { tasksDone, handleDelete, handleTick } = context;
   return (
     <div className="task-container">
       <div className="tick">

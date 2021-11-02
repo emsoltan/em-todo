@@ -88,7 +88,7 @@ header form button {
 }
 
 section {
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -105,7 +105,7 @@ section {
 .to-do-title , .done-title  {
 width: 50%;
 text-align: center;
-margin:0 auto;
+margin:0.75rem auto;
  box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
@@ -119,7 +119,13 @@ aside {
   flex-direction: column;
   padding: 5px 10px;
 }
-
+.TaskContainer{
+  background-color: #e9c46a;  
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+}
 aside h3 {
   padding-left: 10px;
   text-decoration: underline;
@@ -143,6 +149,10 @@ aside h2 {
 .task-container {
   width: 100%;
   display: flex;
+  margin-bottom: 0.5rem;
+background-color: whitesmoke;
+border-radius: 10px;
+;
 }
 
 .task {
@@ -154,16 +164,13 @@ aside h2 {
 
 .task p {
   flex-wrap: wrap;
-  background-color: #e9c46a;
   padding: 0.5rem;
   border-radius: 5px;
   /* font-size: 1.3rem; */
   font-weight: bold;
   color: #264653;
   /* width:100%; */
-  box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(233, 196, 106, 0.75);
+
 }
 
 .bin, .tick {
